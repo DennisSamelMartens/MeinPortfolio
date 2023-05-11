@@ -1,0 +1,449 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Courier New', Courier, monospace, Arial, sans-serif;
+  margin: 0;
+}
+
+header, nav, main, footer {
+  display: block;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  height: 130px;
+  position: fixed;
+  z-index: 3;
+}
+
+nav {
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  top: 100px;
+  z-index: 4;
+  border-top: 0.5px dashed;
+  background-color: #333;
+  color: #fff;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#a-home:hover {
+  color: blanchedalmond;
+}
+
+#a-photo:hover {
+  color: burlywood;
+}
+
+#a-design:hover {
+  color: cadetblue;
+}
+
+#a-music:hover {
+  color: goldenrod;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#photography .section {
+  margin-bottom: 250px;
+}
+
+.row-title {
+  display: flex;
+  width: 100%; 
+}
+.row,
+.row-banner {
+  display: flex;
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.row {
+  width: 90%; 
+}
+
+.col-4 {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
+  width: 33.33%; 
+  justify-content: center;
+}
+
+.col-5 {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
+  width: 40%; 
+}
+
+.col-6 {
+  margin: 0 auto;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
+  width: 40%; 
+}
+
+.col-6-L,
+.col-6-R {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
+  width: 40%; 
+  margin: 100px auto;
+}
+
+.col-7 {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
+  width: 55%;
+}
+
+.col-space {
+  height: 10px;
+  width: 5%;
+}
+
+.col-12 {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
+  width: 100%; 
+}
+
+.col-12-block {
+  display: block;
+  width: 100%;
+  padding: 80px 0 40px 0; 
+}
+
+.col-12-home {
+  margin: 0 auto;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
+  width: 100%; 
+}
+
+.col-12-headings {
+  display: block;
+  width: 100%; 
+}
+
+.col-5,
+.col-7,
+.col-12 {
+ display: flex; 
+ max-height: 700px;
+ padding-top: 40px;
+}
+
+.col-title {
+  position: relative;
+}
+
+.photo-title {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  min-height: 800px;
+}
+
+.photo {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  transition: .3s ease;
+}
+
+.photo:hover,
+.designs:hover {
+  transform: scale(1.05);
+  border-radius: 20px;
+}
+
+.designs {
+  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+  max-height: 600px;
+  margin: auto;
+  transition: .3s ease;
+  border-radius: 25px;
+}
+
+.p-centered {
+  width: 500px;
+  max-width: 80%;
+  text-align: center;
+  margin: auto;
+}
+
+#home .p-centered {
+padding: 50px;
+}
+
+.motto {
+  margin: auto;
+  width: 100%;
+}
+
+.main-heading {
+  font-weight: 100;
+  font-size: xx-large;
+  margin: 10px 0 0 0;
+}
+
+.name {
+  font-weight: 100;
+  font-size: medium;
+}
+
+.category {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 0;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: x-large;
+}
+
+.dashed-line {
+  position: absolute;
+  width: 100%;
+  border: 0.5px dashed #fff;
+}
+
+.dark-dashed {
+  border: 0.5px dashed;
+  margin: 80px 0;
+}
+
+.player-L,
+.player-R {
+  width: 500px;
+  max-width: 80%;
+  text-align: center;
+  padding: 30px 0 50px 0;
+}
+
+.player-L {
+  float: left;
+}
+
+.player-R {
+  float: right;
+}
+
+#row-reverse {
+  flex-direction: row-reverse;
+}
+
+#music .col-12,
+#music .col-12 {
+  display: block;
+}
+
+#dashed-line-design {
+  top: 30px;
+}
+
+#dashed-line-bottom {
+  z-index: 2;
+  top: 240px;
+}
+
+#col-6-banner {
+  width: 40%;
+}
+
+#home {
+  height: 660px;
+  margin: 0 0 -130px;
+  padding: 250px 0 0 0;
+  background-color: blanchedalmond;
+  width: 100%;
+}
+
+#home .p-centered {
+  border-radius: 10px;
+  max-width: 60%;
+}
+
+#home .row {
+  max-width: 500px;
+}
+
+#photography {
+  padding-top: 130px;
+}
+
+#photography .photo-title {
+  max-height: 850px;
+}
+
+#design-section {
+  padding-top: 250px;
+  display: block;
+  margin: 70px auto -50px ;
+  border-radius: 25px;
+}
+
+#design-section .photo-title {
+  min-height: auto;
+  height: 200px;
+  object-fit: unset;
+}
+
+#design-section .row {
+  align-items: center;
+}
+
+.row-banner {
+  display: flex;
+}
+
+.background {
+display: block;
+background-color: cadetblue;
+border-radius: 25px;
+width: 100%;
+margin: -107px auto -50px;
+}
+
+.grey-background {
+  display: block;
+  width: 100%;
+  
+  border-radius: 25px 25px 0 0;
+}
+
+#design-section .motto,
+#music .motto {
+  margin: 20px 0 20px;
+}
+
+#music-title {
+  background-color: #fff;
+  color: #000;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: xx-large;
+  margin: 250px auto 50px;
+  width: 50%;
+  padding: 10px 0;
+  border-radius: 25px;
+
+}
+
+#music .motto-L,
+#music .motto-R {
+  color: #000;
+  background-color: #fff;
+  padding: 10px;
+  width: 40%;
+  margin: 180px auto 10px;
+  border-radius: 25px;
+}
+
+#music .motto-L {
+  float: left;
+}
+
+#music .motto-R {
+  float: right;
+}
+
+#music-p {
+  background-color: #fff;
+  width: 100%;
+  padding: 10px;
+  border-radius: 25px;
+}
+
+#music {
+  background-image: url(https://drive.google.com/file/d/1i0zuMz2s5C7hJpnhjihEulhv9Zlyck3l/view?usp=share_link);
+  background-size:cover;
+  padding-bottom: 400px;
+  width: 100%;
+  margin: auto;
+}
+
+#design-title {
+  left:80%;
+  top: 31px;
+  background-color: #000;
+  padding: 0 10px 0 10px;
+}
+
+#design-title-img,
+#design-bottom-img {
+  border-radius: 25px;
+}
+
+#design-bottom-img {
+  transform: rotate(180deg);
+  
+}
+
+#row-album {
+  max-width: 700px;
+}
+
+#albumcover {
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 952px){
+  #design-section .row {
+    display: block;
+  }
+
+  .col-6-L,
+  .col-6-R {
+    width: 80%;
+  }
+
+  #col-6-banner {
+    width: 80%;
+  }
+
+  .col-5,
+  .col-7,
+  .col-12 {
+    padding-top: 20px;
+  }
+}
